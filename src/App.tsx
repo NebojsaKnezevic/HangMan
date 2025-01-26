@@ -3,7 +3,8 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import wordList from './word-list.json'
-import { HangmanDrawing } from './components/hangman-drawing'
+import { HangmanDrawing } from './components/hangman-drawing/hangman-drawing'
+import { HangmanWord } from './components/hangman-word/hangman-word'
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState<string>(() => {
@@ -30,6 +31,7 @@ function App() {
     <div style={STYLES_MAIN}>
       <div style={STYLES_HEADER}>win lose</div>
       <HangmanDrawing/>
+      <HangmanWord/>
     </div>
 
   )
