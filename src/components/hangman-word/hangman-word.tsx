@@ -3,7 +3,7 @@ import React from "react";
 export const HangmanWord: React.FC = () => {
 
     const word = "test"
-    const guessedLetter = ['t']
+    const guessedLetter = ['t', 'r', 'e']
     const wordStyle: React.CSSProperties = {
         display: 'flex',
         gap:'.25rem',
@@ -18,7 +18,7 @@ export const HangmanWord: React.FC = () => {
         .split("")
         .map((item, index)=>{
             return(
-                <span style={{borderBottom: '.1em solid black'}}>
+                <span style={{borderBottom: '.1em solid black'}} key={index}>
                     <span style={{visibility: guessedLetter.includes(item) ? 
                         'visible' : 'hidden'}}>{item}</span>
                 </span>
