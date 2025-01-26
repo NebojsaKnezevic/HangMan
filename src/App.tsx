@@ -5,6 +5,7 @@ import { useState } from 'react'
 import wordList from './word-list.json'
 import { HangmanDrawing } from './components/hangman-drawing/hangman-drawing'
 import { HangmanWord } from './components/hangman-word/hangman-word'
+import { Keyboard } from './components/keyboard/keyboard'
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState<string>(() => {
@@ -32,6 +33,8 @@ function App() {
       <div style={STYLES_HEADER}>win lose</div>
       <HangmanDrawing/>
       <HangmanWord/>
+      <div style={{alignSelf: 'stretch'}}><Keyboard/></div>
+      
     </div>
 
   )
