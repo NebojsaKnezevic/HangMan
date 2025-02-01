@@ -1,7 +1,8 @@
 import { CSSProperties } from "react";
 
 export const containerStyle: CSSProperties = {
-    position: 'relative'
+    position: 'relative',
+    minHeight: '300px'
 };
 
 export const topBeamStyle: CSSProperties = {
