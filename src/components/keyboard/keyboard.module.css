@@ -13,8 +13,7 @@
 }
 
 .btn.active{
-    background-color: aqua;
-    color: white;
+    
 }
 
 .btn.inactive{
@@ -24,4 +23,13 @@
 .btn:hover:not(:disabled),
 .btn:focus:not(:disabled){
     background-color: aqua; color: white;
+}
+
+.active{
+    background-color: aqua;
+    color: white;
+}
+
+.inactive{
+    opacity: .3;
 }
